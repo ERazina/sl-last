@@ -1,0 +1,36 @@
+.footer {
+  //   position: absolute;
+  bottom: 0;
+  max-width: 100%;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+  }
+
+  &-dev-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  &-social {
+    display: flex;
+
+    &__link {
+      width: 30px;
+      height: 30px;
+      margin-left: 4px;
+      background-color: rgb(48, 48, 48);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__link > svg {
+      fill: white;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.dropdown {
+  &-content {
+    display: flex;
+    position: absolute;
+    top: 96px;
+    right: 0;
+    left: 0;
+    background: white;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+    .nav-link {
+      padding: 10px 0;
+      color: black;
+      text-decoration: none;
+    }
+
+    .active {
+      color: blue;
+    }
+  }
+  .closed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown {
+    display: none;
+  }
+}

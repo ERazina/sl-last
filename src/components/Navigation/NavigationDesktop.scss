@@ -1,0 +1,30 @@
+.nav {
+  display: none;
+}
+
+.active {
+  color: blue;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    display: none;
+    display: flex;
+    justify-content: space-between;
+
+    &-link {
+      padding-left: 30px;
+      text-decoration: none;
+      color: black;
+
+      .nav-link {
+        padding: 10px 0;
+        color: black;
+      }
+    }
+  }
+
+  .active {
+    color: blue;
+  }
+}
