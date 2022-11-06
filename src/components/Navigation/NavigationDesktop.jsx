@@ -1,21 +1,26 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import UseLocalStorage from "../../hooks/UseLocalStorage";
+
 import "./NavigationDesktop.scss";
 
 function NavigationDesktop() {
+  const { t } = useTranslation();
+  const [storedValue, setValue] = UseLocalStorage("language", "ru");
   return (
     <nav className="nav">
       <NavLink to="/home" className="nav-link">
-        Home
+        {t("home")}
       </NavLink>
       <NavLink to="/gallery" className="nav-link">
-        Gallery
+        {t("gallery")}
       </NavLink>
       <NavLink to="/about" className="nav-link">
-        About
+        {t("about")}
       </NavLink>
       <NavLink to="/info" className="nav-link">
-        Info
+        {t("info")}
       </NavLink>
     </nav>
   );

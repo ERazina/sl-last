@@ -1,13 +1,18 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import i18n from "./i18n";
 import Home from "./components/Home/Home";
 import Gallery from "./components/Gallery/Gallery";
 import About from "./components/About/About";
 import Info from "./components/Info/Info";
 import Layout from "./components/Layout/Layout";
 import "./App.css";
+import { useTranslation } from "react-i18next";
+import UseLocalStorage from "./hooks/UseLocalStorage";
 
 function App() {
+  const { t } = useTranslation();
+  const [storedValue, setValue] = UseLocalStorage("language", "ru");
   return (
     <div className="app">
       <Routes>

@@ -1,10 +1,13 @@
 import React from "react";
-import { SlSocialVkontakte } from "react-icons/sl";
 import { FaFacebookF, FaInstagram, FaBehance } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import UseLocalStorage from "../../hooks/UseLocalStorage";
 
 import "./Footer.scss";
 
 function Home() {
+  const { t } = useTranslation();
+  const [storedValue, setValue] = UseLocalStorage("language", "ru");
   return (
     <div className="footer">
       <div className="footer-wrapper">
@@ -15,7 +18,7 @@ function Home() {
             target="_blank"
             className="footer-dev-link"
           >
-            Developed by Elina Razina
+            {t("developed by")} Elina Razina
           </a>
         </div>
         <div className="footer-social">
