@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
-import { GrClose } from "react-icons/gr";
-import NavigationDesktop from "./../Navigation/NavigationDesktop";
-import MobileNavigation from "../MobileNavigation/MobileNavigation";
-import "./Header.scss";
+import React, { useState } from 'react';
+import { BiMenuAltRight } from 'react-icons/bi';
+import { GrClose } from 'react-icons/gr';
+import NavigationDesktop from './../Navigation/NavigationDesktop';
+import MobileNavigation from '../MobileNavigation/MobileNavigation';
+import './Header.scss';
 
 function Header() {
   const [opened, setOpened] = useState(false);
@@ -13,10 +13,10 @@ function Header() {
     setOpened(!opened);
   };
   return (
-    <div className="header">
-      <div className="header-nav">
-        <h1>SL</h1>
-        <button class="dropdown-btn" onClick={toggleDropDown}>
+    <div className='header'>
+      <div className='header-nav'>
+        <h2>SL</h2>
+        <button className='dropdown-btn' onClick={toggleDropDown}>
           {opened ? <GrClose /> : <BiMenuAltRight />}
         </button>
       </div>
