@@ -33,5 +33,14 @@
     &__link > svg {
       fill: white;
     }
+
+
+    &__link:hover {
+      background: #ea4c89;
+      
+      &__link > svg path {
+        fill: #ea4c89;
+      }
+    }
   }
 }

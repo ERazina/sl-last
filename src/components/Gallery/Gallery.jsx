@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-// import "./Logo.scss";
+import './Gallery.scss';
 
 function Gallery() {
   const showMore = () => {

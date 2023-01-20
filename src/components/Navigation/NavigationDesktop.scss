@@ -2,8 +2,8 @@
   display: none;
 }
 
-.active {
-  color: blue;
+.nav-link.active {
+  color: #ea4c89;
 }
 
 @media screen and (min-width: 1024px) {
@@ -18,9 +18,5 @@
       color: black;
       white-space: nowrap;
     }
-  }
-
-  .active {
-    color: blue;
   }
 }

@@ -5,8 +5,8 @@ function Info() {
   return (
     <div className='info'>
       <h1>Information</h1>
-      <h2>To order painting</h2>
-      <h2>To invite for participation for an exhibition</h2>
+      <h2>Order painting</h2>
+      <h2>Invite for participation for an exhibition</h2>
 
       {/* <div>If you want to buy a painting from me, write to me by mail so that we can agree on all the details.</div>
       <h2>Purchase</h2>
