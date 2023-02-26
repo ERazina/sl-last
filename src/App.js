@@ -6,9 +6,13 @@ import Gallery from "./components/Gallery/Gallery";
 import Exhibitions from "./components/Exhibitions/Exhibitions";
 import Info from "./components/Info/Info";
 import Layout from "./components/Layout/Layout";
-import "./App.css";
+import ImageCard from "./components/ImageCard/ImageCard";
 import { useTranslation } from "react-i18next";
 import UseLocalStorage from "./hooks/UseLocalStorage";
+
+import "./App.css";
+
+
 
 function App() {
   const { t } = useTranslation();
@@ -18,11 +22,11 @@ function App() {
 
   return (
     <div className="app">
-      {}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" index element={<Home />} />
           <Route path="exhibitions" element={<Exhibitions />} />
+          <Route path="gallery/image/:id" element={<ImageCard />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="info" element={<Info />} />
           <Route path="*" element={<Home />} />

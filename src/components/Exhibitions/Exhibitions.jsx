@@ -13,7 +13,7 @@ function Exhibitions() {
       </p> */}
       {/* image */}
       <ul>
-        <li>2021 - ARTIST OF THE MONTH, Venezia, Italy</li>
+        <li>2021 - ARTIST OF THE MONTH, Venice, Italy</li>
         <li>2021 - ZEN ART FESTIVAL, Moscow</li>
         <li>2021 - RUSSIAN ART AWARD, Moscow</li>
         <li>2021 - ART COSMOGONY, Moscow</li>
