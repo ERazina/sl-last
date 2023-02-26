@@ -1,9 +1,8 @@
 import React from 'react';
 import Button from '../Button/Button';
 import { images } from '../../api/mock';
-import { Row, Col } from 'antd';
+import { Row } from 'antd';
 import { useNavigate } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 import './Gallery.scss';
 
 function Gallery() {
@@ -30,9 +29,7 @@ function Gallery() {
         <div className='grid'>
           {images.map((image) => (
             <>
-              {/* // <div className='image-div' key={image.id} style={{ backgroundImage: `url(${image.src}})` }} onClick={goToGallery}></div> */}
               <img className='image-card' key={image.id} src={image.src} alt={image.name} onClick={() => goToItem(image.id)} />
-              {/* <NavLink to={'/gallery/' + image.id}>{image.name}</NavLink> */}
             </>
           ))}
         </div>

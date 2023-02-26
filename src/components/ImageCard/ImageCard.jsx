@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import Button from './../Button/Button';
 import { useParams } from 'react-router-dom';
 import { images } from '../../api/mock';
 import './Card.scss';
