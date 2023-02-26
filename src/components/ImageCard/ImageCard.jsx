@@ -15,9 +15,9 @@ function ImageCard() {
   }, [id]);
 
   return (
-    <div>
+    <div className='card'>
       {image?.map((item) => (
-        <img className='image-card' key={item.id} src={item.src} alt={item.name} />
+        <img className='image-card' key={item.id} src={`../${item.src}`} alt={item.name} />
       ))}
     </div>
   );
